@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+<meta charset="UTF-8">
+<style>
+body {
+  background-image: url('bg3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  filter: blur(100%);
+  margin: 0;
+  padding: 0;
+  animation: fadeAnimation 1.5s ease forwards;
+}
+@keyframes fadeAnimation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+nav {
+  position: fixed;
+  inset: 0;
+  height: 80px;
+  width: 40.5%;
+  top: 42%;
+  margin:auto;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000001d8;
+  backdrop-filter: blur(100px);
+  border-radius: 12px;
+  
+}
+ul li {
+  float: left;
+}
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgba(0, 0, 0, 0.822);
+  border-style: inset;
+  padding: 22px;
+}
+section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 750px;
+  background-color: #000001d8;
+  position: fixed;
+  inset: 0;
+  top: -20%;
+  margin:auto;
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  padding: 5px;
+}
+section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 750px;
+  position: fixed;
+  inset: 0;
+  top: -10%;
+  margin:auto;
+}
+p.Welcome {
+  text-transform: uppercase;
+  color: white;
+  font-size: xx-large;
+}
+p.Text {
+  text-transform: uppercase;
+  color: white;
+}
+</style>  
+<title>Aiden's Page</title>
+</head>
+<body>
+<main>
+<section1>
+<p class="Welcome"><b><strong>Welcome to Aiden's Webpage</b></strong></p>
+</section1>
+<section2>
+<p class="Text">To navigate click any of the options below!</p>
+</section2>
+<nav>
+<ul>
+<li><a href="Detail.hmtl">About Me</a></li>
+<li><a href="Skills.html">Skills</a></li>
+<li><a href="Portfolio.html">Portfolio</a></li>
+<li><a href="Contacts.html">Contacts</a></li>
+</ul>
+</nav>
+</main>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  animation: fadeAnimation 1.5s ease forwards;
+}
+@keyframes fadeAnimation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+#BGVideo {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+nav {
+  position: fixed;
+  inset: 0;
+  height: 80px;
+  width: 41%;
+  top: 42%;
+  margin:auto;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.925);
+  backdrop-filter: blur(100px);
+  border-color: white;
+  border-radius: 12px;
+  padding: 5px;
+  border-style: dotted;
+}
+ul li {
+  float: left;
+}
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+  margin: 5px;
+}
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+li a:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+section0 {
+  position: fixed;
+  width: 750px;
+  height: 500px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: white;
+  border-radius: 12px;
+  border-style: dotted;
+  background-color: black;
+}
+section0 section1,
+section0 section2,
+section0 nav {
+  position: absolute;
+  inset: auto;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+section0 section1 {
+  top: 150px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+section0 section2 {
+  top: 215px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section0 section3 {
+  top: 250px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+section0 nav {
+  top: 508px;
+  height: 80px;
+  width: 755px;
+  left: -2px;
+}
+p.Welcome {
+  text-transform: uppercase;
+  color: white;
+  font-size: xx-large;
+  z-index: 10;
+}
+p.Text {
+  text-transform: uppercase;
+  color: white;
+}
+/* Prevent sideways scrolling */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Flexible main panel */
+section0 {
+  width: min(750px, 92vw);
+  height: min(500px, 70vh);
+}
+
+/* Keep the navigation inside the panel width */
+section0 nav {
+  width: 100%;
+  left: 0;
+}
+
+/* Tablet and smaller laptops */
+@media (max-width: 1000px) {
+  section0 {
+    width: 90vw;
+    height: 65vh;
+  }
+
+  section0 section1 {
+    top: 100px;
+  }
+
+  section0 section2 {
+    top: 180px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  section0 section3 {
+    top: 300px;
+  }
+
+  section0 nav {
+    top: calc(100% + 15px);
+  }
+
+  section0 nav ul li a {
+    padding: 20px 12px;
+    font-size: 14px;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  section0 {
+    width: 92vw;
+    height: 70vh;
+    top: 45%;
+  }
+
+  section0 section1 {
+    top: 60px;
+    height: auto;
+  }
+
+  p.Welcome {
+    font-size: clamp(22px, 7vw, 32px);
+    text-align: center;
+  }
+
+  section0 section2 {
+    top: 150px;
+    height: auto;
+    padding: 0 15px;
+  }
+
+  p.Text {
+    font-size: 13px;
+    text-align: center;
+  } 
+  section0 section3 {
+    top: 250px;
+    height: auto;
+  }
+  section0 nav {
+    top: calc(100% + 15px);
+    height: auto;
+  }
+  section0 nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  section0 nav ul li,
+  section0 nav ul li a {
+    width: 100%;
+  }
+  section0 nav ul li a {
+    padding: 15px;
+    margin: 2px;
+    font-size: 14px;
+  }
+}
+</style>
+<title>✧ | Main Menu </title>
+</head>
+<body>
+<main>
+<video autoplay muted loop id="BGVideo">
+<source src="videobg.mp4" type="video/mp4">
+</video>
+<section0>
+<section1>
+<p class="Welcome"><b><strong>Welcome to Aiden's Webpage</b></strong></p>
+</section1>
+<section2>
+<p class="Text">To navigate click any of the options in the Navigation Bar!</p>
+</section2>
+<nav>
+<ul>
+<li><a href="Details.html">About Me</a></li>
+<li><a href="Skills.html">Skills</a></li>
+<li><a href="Portfolio.html">Portfolio</a></li>
+<li><a href="Contacts.html">Contacts</a></li>
+</ul>
+</nav>
+</section0>
+</main>
+</body>
+</html>

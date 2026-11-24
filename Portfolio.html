@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  animation: fadeAnimation 1.5s ease forwards;
+}
+@keyframes fadeAnimation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+#BGVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+nav {
+  position: fixed;
+  inset: 0;
+  height: 100px;
+  width: 90%;
+  top: -85%;
+  margin:auto;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000001d8;
+  backdrop-filter: blur(100px);
+  border-radius: 12px;
+  padding: 5px;
+  border-style: dotted;
+  border-color: white;
+}
+ul li {
+  float: left;
+}
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+  margin: 5px;
+}
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+li a:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+section0 {
+  display: flex;
+justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 1645px;
+  background-color: rgba(0, 0, 0, 0.925);
+  position: fixed;
+  inset: 0;
+  top: -65%;
+  margin:auto;
+  backdrop-filter: blur(100px);
+  border-color: white;
+  border-radius: 12px;
+  padding: 5px;
+  border-style: dotted;
+  z-index: 999;
+  border-color: rgba(255, 255, 255, 0.13);
+}
+section1 {
+  display: flex;
+  height: 800px;
+  width: 1675px;
+  background-color: rgba(0, 0, 0, 0.925);
+  position: fixed;
+  inset: 0;
+  top: 10%;
+  margin:auto;
+  backdrop-filter: blur(100px);
+  border-color: white;
+  border-radius: 12px;
+  padding: 5px;
+  border-style: dotted;
+}
+section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 1645px;
+  background-color: rgba(0, 0, 0, 0.925);
+  position: fixed;
+  inset: 0;
+  top: 17%;
+  left: -0%;
+  margin:auto;
+  backdrop-filter: blur(100px);
+  border-color: white;
+  border-radius: 12px;
+  padding: 5px;
+  border-style: dotted;
+  border-color: rgba(255, 255, 255, 0.13);
+}
+section3{
+  position: fixed;
+  z-index: 999;
+  color: white;
+}
+section3 img {
+  position: fixed;
+  width: 325px;
+  height: 425px;
+  top: 23%;
+  left: 6.2%;
+  border-style: none;
+  border-radius: 10px;
+}
+section4{
+  position: fixed;
+  z-index: 999;
+  color: white;
+}
+section4 img {
+  position: fixed;
+  width: 325px;
+  height: 425px;  
+  top: 23%;
+  left: 23.7%;
+  border-style: none;
+  border-radius: 10px;
+}
+section5{
+  position: fixed;
+  z-index: 999;
+  color: white;
+}
+section5 img {
+  position: fixed;
+  width: 325px;
+  height: 425px;
+  top: 23%;
+  left: 41.22%;
+  border-style: none;
+  border-radius: 10px;
+}
+section6{
+  position: fixed;
+  z-index: 999;
+  color: white;
+}
+section6 img {
+  position: fixed;
+  width: 325px;
+  height: 425px;
+  top: 23%;
+  left: 58.8%;
+  border-style: none;
+  border-radius: 10px;
+}
+section7{
+  position: fixed;
+  z-index: 999;
+  color: white;
+  top: 30%;
+  left: 76.4%;
+}
+section7 img {
+  position: fixed;
+  width: 325px;
+  height: 425px;
+  top: 23%;
+  left: 76.4%;
+  border-style: none;
+  border-radius: 10px;
+}
+section8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 325px;
+  background-color: rgba(0, 0, 0, 0.925);
+  position: fixed;
+  inset: 0;
+  top: 62%;
+  left: -70.4%;
+  margin:auto;
+  backdrop-filter: blur(100px);
+  border-radius: 9px;
+  border-style: none;
+  border-color: rgba(255, 255, 255, 0.13);
+  z-index: 999;
+}
+section9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 325px;
+  background-color: rgba(0, 0, 0, 0.925);
+  position: fixed;
+  inset: 0;
+  top: 62%;
+  left: -35.3%;
+  margin:auto;
+  backdrop-filter: blur(100px);
+  border-radius: 9px;
+  border-style: none;
+  border-color: rgba(255, 255, 255, 0.13);
+  z-index: 999;
+}
+section10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 325px;
+  background-color: rgba(0, 0, 0, 0.925);
+  position: fixed;
+  inset: 0;
+  top: 62%;
+  left: -0.1%;
+  margin:auto;
+  backdrop-filter: blur(100px);
+  border-radius: 9px;
+  border-style: none;
+  border-color: rgba(255, 255, 255, 0.13);
+  z-index: 999;
+}
+section11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 325px;
+  background-color: rgba(0, 0, 0, 0.925);
+  inset: 0;
+  top: 62%;
+  left: 35%;
+  margin:auto;
+  backdrop-filter: blur(100px);
+  border-radius: 9px;
+  border-style: none;
+  border-color: rgba(255, 255, 255, 0.13);
+  z-index: 999;
+  position: fixed;
+}
+section12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 325px;
+  background-color: rgba(0, 0, 0, 0.925);
+  inset: 0;
+  top: 62%;
+  left: 70%;
+  margin:auto;
+  backdrop-filter: blur(100px);
+  border-radius: 9px;
+  border-style: none;
+  border-color: rgba(255, 255, 255, 0.13);
+  z-index: 999;
+  position: fixed;
+}
+h1{
+    color: white;
+    top: 10%;
+}
+p1 {
+    color: white;
+}
+section3 button{
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: zoom-in;
+}
+section4 button{
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: zoom-in;
+}
+section5 button{
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: zoom-in;
+}
+section6 button{
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: zoom-in;
+}
+section7 button{
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: zoom-in;
+}
+[popover] {
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+[popover] img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 85vw;
+  max-height: 85vh;
+}
+[popover]::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+}
+article[popover] {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+}
+article[popover] img {
+  position: static;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 85vw;
+  max-height: 85vh;
+}
+p {
+  color: white;
+  text-align: center;
+  font-family: 'Courier New';
+  font-size: 15px;
+  margin: 3%;
+}
+</style>  
+<title>✧ | Portfolio</title>
+</head>
+<body>
+<main>
+<video autoplay muted loop id="BGVideo">
+<source src="videobg.mp4" type="video/mp4">
+</video>    
+<nav>
+<ul>
+<li><a href="Main_Menu.html">Main Menu</a></li>
+<li><a href="Details.html">About Me</a></li>
+<li><a href="Skills.html">Skills</a></li>
+<li><a href="Portfolio.html">Portfolio</a></li>
+<li><a href="Contacts.html">Contacts</a></li>
+</ul>
+</nav>
+<section00>
+<section0>
+  <h1>AIDEN'S PORTFOLIO</h1>
+</section0>
+<section1>
+</section1>
+<section2>
+</section2>
+<section3>
+  <button popovertarget="zoom3">
+    <img src="PracticalResearch.png" alt="ResearchPaper">
+  </button><article popover id="zoom3">
+    <img src="PracticalResearch.png" alt="ResearchPaper enlarged">
+  </article>
+</section3>
+<section4>
+  <button popovertarget="zoom4">
+    <img src="TSBHMAE.png" alt="ResearchPaperforEurekaScienceOrg1">
+  </button>
+  <article popover id="zoom4">
+    <img src="TSBHMAE.png" alt="ResearchPaperforEurekaScienceOrg1 enlarged">
+  </article>
+</section4>
+<section5>
+  <button popovertarget="zoom5">
+    <img src="TWAUHTESOE.png" alt="ResearchPaperforEurekaScienceOrg2">
+  </button>
+  <article popover id="zoom5">
+    <img src="TWAUHTESOE.png" alt="ResearchPaperforEurekaScienceOrg2">
+  </article>
+</section5>
+<section6>
+  <button popovertarget="zoom6">
+    <img src="PositionPaper.jpg" alt="PositionPaperforFPL">
+  </button><article popover id="zoom6">
+    <img src="PositionPaper.jpg" alt="PositionPaperforFPL">
+  </article>
+</section6>
+<section7>
+  <button popovertarget="zoom7">
+    <img src="Cover.jpg" alt="CoverofMagazineforFPLsubject">
+    <article popover id="zoom7">
+      <img src="Cover.jpg" alt="CoverofMagazineforFPLsubject">
+    </article>
+  </button>
+</section7>
+<section8>
+  <p><b>"Development of a Sensor Cane Prototype for the Visually Impaired"</b><br><br>
+    <br>I was one of the researchers for our Research Topic: Development of a Sensor Cane Prototype for the Visually Impaired.</br>
+  </p>
+</section8>
+<section9>
+  <p><b>"The Science Behind How Music Affects Emotions"</b><br><br>
+    <br>I was one of the lead researcher for the FEU Organization: Eureka Science and this was one of my research.</br>
+  </p>
+</section9>
+<section10>
+  <p><b>"The World Around Us: How the Environment Shapes Our Emotions"</b><br><br>
+    <br>This was also one of my reseach I did during my time in the organization.</br>
+  </p>
+</section10>
+<section11>
+  <p><b>"Mahalaga Pa Ba Ang Mga Kursong Pang Teknolohiya Sa Kolehiyo Kahit Na Matutunan Na Ang Mga Ito Sa Internet?"</b><br><br>
+    <br>This was one of the activities that me and my group did for our Filipino sa Piling Larang Subject during Gr12. I was one of the reseachers from the arguments, counter-arguments, and action plan.</br>
+  </p>
+</section11>
+<section12>
+  <p><b>"Ang Pinal Na Output sa Filipino Sa Piliing Larang"</b><br><br>
+    <br>I was one of the editors for our final activity in our FPL Subject. I edited the bionotes of all the boys from our sections and I was also assigned to input their descriptions about themselves.</br>
+  </p>
+</section12>
+</section00>
+</main>
+</body>
+</html>

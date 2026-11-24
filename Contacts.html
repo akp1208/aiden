@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  animation: fadeAnimation 1.5s ease forwards;
+}
+@keyframes fadeAnimation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+#BGVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+nav {
+  position: fixed;
+  inset: 0;
+  height: 80px;
+  width: 41%;
+  top: 42%;
+  margin:auto;
+  left: -42%;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.925);
+  backdrop-filter: blur(100px);
+  border-color: white;
+  border-radius: 12px;
+  padding: 5px;
+  border-style: dotted;
+}
+ul li {
+  float: left;
+}
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+  margin: 5px;
+}
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+li a:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+section0 {
+  position: fixed;
+  width: 750px;
+  height: 500px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: white;
+  border-radius: 12px;
+  border-style: dotted;
+  background-color: black;
+}
+section0 section1,
+section0 section2,
+section0 section3,
+section0 nav {
+  position: absolute;
+  inset: auto;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+section0 section1 {
+  top: 150px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+section0 section2 {
+  top: 215px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section0 section3 {
+  top: 250px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+section0 nav {
+  top: 508px;
+  height: 80px;
+  width: 755px;
+  left: -2px;
+}
+p.Welcome {
+  text-transform: uppercase;
+  color: white;
+  font-size: xx-large;
+}
+p.Text {
+  text-transform: uppercase;
+  color: white;
+}
+section0 section3 button {
+  width: 35px;
+  height: 25px;
+  padding: 0;
+
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+section0 section3 button:hover {
+  color: white;
+  background-color: black;
+  border-color: white;
+  transform: scale(1.15);
+}
+#Emails,
+#Phone,
+#Github,
+#LinkedIn {
+  position: fixed;
+  top: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 10px 15px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 8px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 999;
+}
+</style>
+<title>✧ | Contacts</title>
+</head>
+<body>
+<main>
+<video autoplay muted loop id="BGVideo">
+<source src="videobg.mp4" type="video/mp4">
+</video>
+<section0>
+<section1>
+<p class="Welcome"><b><strong>Aiden's Contacts</b></strong></p>
+</section1>
+<section2>
+<p class="Text"></i>Click the Icons to show the information</p>
+</section2>
+<section3>
+<p><button popovertarget="Emails"><i class="fa-solid fa-envelope"></i></button></p>
+<div id="Emails" popover>akrisplata@gmail.com</div>
+<button popovertarget="Phone"><i class="fa-solid fa-phone"></i></button>
+<div id="Phone" popover>09683831589</div>
+<button popovertarget="Github"><i class="fa-brands fa-github"></i></button>
+<div id="Github" popover>https://github.com/akp1208</div>
+<button popovertarget="LinkedIn"><i class="fa-brands fa-linkedin"></i></button>
+<div id="LinkedIn" popover>www.linkedin.com/in/aiden-plata-276a4a440</div>
+</section3>
+<nav>
+<ul>
+<li><a href="Main_Menu.html">Main Menu</a></li>
+<li><a href="Details.html">About Aiden</a></li>
+<li><a href="Skills.html">Skills</a></li>
+<li><a href="Portfolio.html">Portfolio</a></li>
+</ul>
+</nav>
+</section0>
+</main>
+</body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</html>
